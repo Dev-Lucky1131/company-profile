@@ -1,0 +1,366 @@
+.main {
+  display: flex;
+  width: 100%;
+  z-index: 10;
+
+}
+
+.analysis_number {
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.Helped,
+.Gained {
+  text-align: center;
+  height: 120px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 10px;
+}
+
+.HelpedNumber {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.growthimgprt {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.heading {
+  font-size: 20px;
+  color: #7c5cfc;
+}
+
+.header {
+  font-weight: 700;
+  font-size: clamp(50px, 127.2vw, 70px);
+  line-height: clamp(70px, 5.2vw, 45px);
+  color: #000000;
+  z-index: 30;
+  margin-bottom: 50px;
+}
+
+.f_Context {
+  color: #7488a6;
+  font-size: 20px;
+  line-height: clamp(30px, 5.2vw, 35px);
+}
+
+.s_Context {
+  color: #7488a6;
+  font-size: 20px;
+  margin-top: 50px;
+  line-height: clamp(30px, 5.2vw, 35px);
+}
+
+.SilvedHighlight {
+
+  -webkit-background-clip: text;
+  font-size: 30px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.Helped {
+  /* background-color: #190929; */
+}
+
+.Gained {}
+
+.HelpedWord {
+  font-size: 20px;
+  color: #5d6180;
+}
+
+.Arrivals {
+  position: absolute;
+  width: 80vw;
+  margin-top: 100px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.Patients {
+  position: absolute;
+  margin-top: -150px;
+  margin-left: -300px;
+  pointer-events: none;
+}
+
+.Business {
+  position: absolute;
+  width: 40vw;
+  pointer-events: none;
+
+  margin-top: -20px;
+}
+
+.BusinessPic {
+  height: 250px;
+  width: 220px;
+}
+
+.ArrowStatic {
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  margin-right: -500px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.Container {
+  display: flex;
+  width: 100%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+@media (max-width: 1500px) {
+  .statics {
+    width: 230px;
+  }
+
+  .launch {
+    width: 350px;
+  }
+
+  .instagram {
+    width: 250px;
+  }
+
+  .subscribe {
+    width: 250px;
+  }
+
+  .client {
+    width: 200px;
+  }
+
+  .revenue {
+    width: 300px;
+  }
+
+}
+
+@media (max-width: 1400px) {
+  .header {
+    font-size: clamp(50px, 127.2vw, 50px);
+    line-height: clamp(50px, 5.2vw, 45px);
+  }
+}
+
+@media (max-width: 1300px) {
+  .statics {
+    width: 200px;
+  }
+
+  .launch {
+    width: 300px;
+  }
+
+  .instagram {
+    width: 200px;
+  }
+
+  .subscribe {
+    width: 200px;
+  }
+
+  .client {
+    width: 160px;
+  }
+
+  .revenue {
+    width: 250px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .Container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .growthimgprt {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .statics {
+    width: 260px;
+  }
+
+  .launch {
+    width: 400px;
+  }
+
+  .instagram {
+    width: 300px;
+  }
+
+  .subscribe {
+    width: 300px;
+  }
+
+  .client {
+    width: 250px;
+  }
+
+  .revenue {
+    width: 350px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .ArrowStatic {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    font-size: clamp(40px, 127.2vw, 40px);
+    line-height: clamp(40px, 5.2vw, 40px);
+  }
+  .SilvedHighlight {
+    font-size: 35px;
+  }
+  .statics {
+    width: 250px;
+  }
+
+  .launch {
+    width: 350px;
+  }
+
+  .instagram {
+    width: 250px;
+  }
+
+  .subscribe {
+    width: 250px;
+  }
+
+  .client {
+    width: 200px;
+  }
+
+  .revenue {
+    width: 300px;
+  }
+  .f_Context,.s_Context,.HelpedWord {
+    font-size: 17px;
+  }
+  .SilvedHighlight {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .statics {
+    width: 200px;
+  }
+
+  .launch {
+    width: 300px;
+  }
+
+  .instagram {
+    width: 200px;
+  }
+
+  .subscribe {
+    width: 200px;
+  }
+
+  .client {
+    width: 160px;
+  }
+
+  .revenue {
+    width: 250px;
+  }
+
+  .SilvedHighlight {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  .growthimgprt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .statics {
+    width: 250px;
+  }
+
+  .launch {
+    width: 350px;
+  }
+
+  .instagram {
+    width: 250px;
+  }
+
+  .subscribe {
+    width: 250px;
+  }
+
+  .client {
+    width: 200px;
+  }
+
+  .revenue {
+    width: 300px;
+  }
+  .header {
+    font-size: clamp(35px, 127.2vw, 35px);
+    line-height: clamp(35px, 5.2vw, 35px);
+  }
+}
+@media (max-width: 600px) {
+.SilvedHighlight {
+  font-size: 25px;
+}
+}
+@media (max-width: 450px) {
+  .right{
+    margin-top: 20px;
+  }
+    
+}
+@media (max-width: 350px) {
+  .right{
+    margin-top: 40px;
+  }
+    
+}

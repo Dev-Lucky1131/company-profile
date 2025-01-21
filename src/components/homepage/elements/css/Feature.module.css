@@ -1,0 +1,315 @@
+
+.Side {
+  height: 100%;
+  width: 100px;
+  position: relative;
+}
+
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: max-content;
+  padding: 100px 0px;
+}
+
+.Main {
+  width: 100%;
+  z-index: 10;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.featurebox {
+  width: 100%;
+  height: 100%;
+  background-color: #272727;
+  border-radius: 30px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+  color: #7c5cfc;
+  font-size: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 50px;
+  font-weight: 500;
+  margin-top: 30px;
+  color: #ffffff;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  color: #e0e0e0;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.experiencebtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.studies {
+  padding: 10px 25px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #7c5cfc;
+  font-size: 20px;
+  border-radius: 30px;
+}
+
+.article {
+  padding: 10px 25px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+}
+
+.featuremain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.featureimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: max-content;
+  position: relative;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.featuredescription {
+  width: 93%;
+  position: absolute;
+  bottom: 20px;
+}
+
+.featureheader {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.descriptioncontent {
+  color: #ffffff;
+  font-size: 15x;
+}
+
+@media (max-width: 1350px) {
+  .RightButtons>* {
+    padding: 10px clamp(10px, 2vw, 25px);
+    font-size: clamp(11px, 1vw, 13px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .featureheader {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .LeftButtons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .LeftSide {
+    height: 580px;
+  }
+
+  .Demo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .MainContent {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .Navbar {
+    margin-top: -25px;
+  }
+
+  .featureimg {
+    height: 500px;
+  }
+
+  .featureheader {
+    font-size: 30px;
+  }
+
+  .featuredescription {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 850px) {
+  .featureimg {
+    height: 450px;
+  }
+
+  .featureheader {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    font-size: 40px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .featureimg {
+    height: 400px;
+  }
+
+  .featureheader {
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 620px) {
+  .PicturesContainer {
+    margin-right: 0px;
+    margin-top: -40px;
+  }
+
+  .RightSide {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width: clamp(1px, 100%, 750px);
+  }
+
+  .UserFlowContainer,
+  .AnalysisContainer {
+    margin-top: 0px;
+  }
+
+  .UserFlowContainer {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .featuredescription {
+    font-size: 12px;
+  }
+
+  .studies,
+  .article {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 550px) {
+  .NavbarButton {
+    font-size: clamp(12px, 2.5vw, 14px);
+    padding: 7px 10px;
+  }
+
+  .RightButtons>* {
+    padding: 8px clamp(8px, 2vw, 15px);
+    font-size: clamp(9px, 2vw, 13px);
+    border-radius: 4px;
+  }
+
+  .RightButtons {
+    gap: 8px;
+    flex-wrap: wrap;
+    width: clamp(1px, 100%, 500px);
+  }
+
+  .PicturesContainer>* {
+    width: clamp(40px, 12vw, 55px);
+    height: clamp(40px, 12vw, 55px);
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    font-size: 30px;
+  }
+
+  .experiencebtn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .featureimg {
+    height: 300px;
+  }
+.Side {
+  width: 59px;
+}
+  .studies,
+  .article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .featureheader {
+    font-size: 15px;
+  }
+  .featuredescription {
+    font-size: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .header {
+    font-size: 25px;
+  }
+}

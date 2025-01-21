@@ -1,0 +1,84 @@
+.Container {
+  display: flex;
+  background-color: #0a0a0d;
+  width: clamp(1px, 100vw, 1920px);
+  height: max-content;
+}
+.heading {
+  color: #7c5cfc;
+  font-size: 20px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  width: 100%;
+  color: #ffffff;
+}
+
+.Main {
+ display: flex;
+ width: 100%;
+ margin-top: 30px;
+ margin-bottom: 100px;
+ padding: 0px 100px;
+}
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  gap: 50px;
+}
+.f_part,.s_part {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.reviewprt_up {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 150px;
+}
+.reviewprt_down {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 150px;
+  height: 450px;
+}
+.reivewimg {
+  display: flex;
+  justify-content: center;
+  width:  100%;
+  height: 400px;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  border-radius: 150px;
+}
+@media (max-width:900px) {
+  .header {
+    font-size: 40px;
+  }
+}
+@media (max-width:800px) {
+  .header {
+    font-size: 30px;
+  }
+}
+@media (max-width:700px) {
+  .reviews {
+    display: flex;
+    justify-content: center;
+  }
+
+}
