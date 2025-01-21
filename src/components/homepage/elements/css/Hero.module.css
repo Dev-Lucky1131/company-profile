@@ -1,0 +1,212 @@
+.Plus,
+.Factor {
+  position: absolute;
+}
+
+.Container {
+  background-color: #060515;
+  display: flex;
+  width: clamp(1px, 100vw, 1920px);
+  height: max-content;
+  justify-content: space-between;
+}
+
+.bgshadow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+}
+
+.brightimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #0f0f2e;
+  background: no-repeat;
+  background-position: center;
+  /* background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px); */
+  z-index: 20 !important;
+}
+
+.heroimg {
+  width: 100%;
+  height: 100%;
+}
+
+.iconbg {
+  background-color: #7c5cfc;
+  padding: 16px 20px;
+  border-radius: 50px;
+  margin-left: -4px;
+  z-index: 30;
+}
+.SectionTitle {
+  font-weight: 500;
+  font-size: clamp(50px, 127.2vw, 70px);
+  text-align: center;
+  line-height: clamp(70px, 5.2vw, 45px);
+  color: #ffffff;
+  z-index: 30;
+}
+
+.TextContainer {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.gapbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  width: 12px;
+  margin-left: -10px;
+  z-index: 30;
+}
+
+.gap {
+  width: 100%;
+  height: 25px;
+  background-color: #7c5cfc;
+}
+
+.HeroButton {
+  border-radius: 30px;
+  padding: 15px 40px;
+  background-color: #7c5cfc;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  z-index: 30;
+}
+
+.HeroButtonCircle {
+  border-radius: 999px;
+  width: 6px;
+  height: 6px;
+  background-color: black;
+  border-radius: 20px;
+  margin-top: 1px;
+}
+
+.HeroButtonText {
+  color: white;
+  font-size: 20px;
+
+}
+
+.SchemasContainer,
+.LogosContainer {
+  width: clamp(1px, 130%, 1550px);
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-top: 75px;
+  margin-bottom: 50px;
+  pointer-events: none;
+}
+
+.LogosContainer {
+  height: max-content;
+}
+
+.SchemaBox {
+  border-radius: 8px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: #ffffff30;
+  width: 250px;
+  height: 230px;
+}
+
+.SchemaBox>* {
+  margin: 20px 20px;
+}
+
+.SchemaDot {
+  border: 1px solid #b85392;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.Dot {
+  background-color: #b85392;
+  height: 8px;
+  width: 8px;
+  border-radius: 999px;
+}
+
+.SchemaTitle {
+  font-weight: 600;
+  font-size: 13.5px;
+  margin-top: -5px;
+}
+
+.SchemaPicture {
+  border-radius: 4px;
+  flex-grow: 1;
+  margin-top: -10px;
+  /* height: calc(100% - 120px); */
+}
+@media (max-width: 1300px) {
+  .SectionTitle {
+    font-size: clamp(40px, 127.2vw, 50px);
+    line-height: clamp(55px, 5.2vw, 40px);
+  }
+  .HeroButton {
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 700px) {
+  .HeroButton {
+    padding: 15px 30px;
+  }
+  .SectionTitle {
+    font-size: clamp(30px, 127.2vw, 40px);
+    line-height: clamp(65px, 5.2vw, 45px);
+  }
+}
+
+@media (max-width: 500px) {
+
+  .SectionTitle {
+    font-size: clamp(30px, 127.2vw, 20px);
+    line-height: clamp(45px, 5.2vw, 40px);
+  }
+  .HeroButtonText {
+    font-weight: 300;
+    font-size: 15px;
+  }
+.iconbg,.gapbox {
+  display: none;
+}
+}
+@media (max-width: 400px) {
+
+  .SectionTitle {
+    font-size: clamp(30px, 127.2vw, 30px);
+    line-height: clamp(45px, 5.2vw, 40px);
+  }
+  .HeroButtonText {
+    font-size: 13px;
+  }
+
+}

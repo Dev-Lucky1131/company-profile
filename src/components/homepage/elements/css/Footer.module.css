@@ -1,0 +1,154 @@
+.Container {
+  display: flex;
+  width: clamp(1px, 100vw, 1920px);
+  height: max-content;
+  background-color: #050511;
+}
+.Main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.f_part {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  height: max-content;
+}
+.s_part {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  height: max-content;
+}
+
+.ads,.support,.legal,.social {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  width: 40%;
+}
+.logoprt {
+  display: flex;
+  gap: 10px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 50px;
+  height: 50px;
+}
+.logoimg {
+  width: 110px;
+  height: 37,5px;
+}
+.logoname {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.description {
+  display: flex;
+  color: #7e7e7e;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.itemname {
+   display: flex;
+  font-size: 25px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.item {
+  display: flex;
+  font-size: 20px;
+  color: #BFBFBF;
+  margin-top: 20px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.intro {
+  display: flex;
+  color: #BFBFBF;
+  font-size: 20px;
+}
+.dcpt {
+  display: flex;
+  color: #282828;
+  font-size: 20px;
+}
+
+.tab_btn button:focus-visible{
+  outline: none !important;
+}
+.h-fit,.overflow-x-scroll {
+  overflow-x: hidden!important;
+}
+
+@media (max-width:900px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .f_part,.s_part {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .dcpt {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+}
+@media (max-width:600px)  {
+  .itemname {
+    font-size: 20px;
+  }
+  .item,.intro,.dcpt {
+    font-size: 15px;
+  }
+  
+}
+@media (max-width:500px)  {
+.f_part,.s_part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.description {
+  text-align: center;
+}
+.ads,.support,.social,.legal {
+  width: 100%;
+}
+.item,.itemname,.logoprt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
