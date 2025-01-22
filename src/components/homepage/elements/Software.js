@@ -43,28 +43,19 @@ function Software({ width }) {
               <CAccordionItem itemKey={1} style={{marginTop:'20px'}} className={styles.accordionitem}>
                 <CAccordionHeader >Experience</CAccordionHeader>
                 <CAccordionBody>
-                My experience and expertise: am proficient in multiple 
-                programming languages, have a strong understanding of 
-                software development methodologies, and possess 
-                excellent problem-solving skills.
+                My experience and expertise: am proficient in multiple programming languages, have a strong understanding of software development methodologies, and possess excellent problem-solving skills.
                 </CAccordionBody>
               </CAccordionItem>
               <CAccordionItem itemKey={2} style={{marginTop:'20px'}} className={styles.accordionitem}>
                 <CAccordionHeader>Expert</CAccordionHeader>
                 <CAccordionBody>
-                My experience and expertise: am proficient in multiple<br /> 
-                programming languages, have a strong understanding of <br />
-                software development methodologies, and possess excellent <br />
-                problem-solving skills.
+                My experience and expertise: am proficient in multiple programming languages, have a strong understanding of software development methodologies, and possess excellent problem-solving skills.
                 </CAccordionBody>
               </CAccordionItem>
               <CAccordionItem itemKey={3} style={{marginTop:'20px'}} className={styles.accordionitem}>
                 <CAccordionHeader>Motivate towards works</CAccordionHeader>
                 <CAccordionBody>
-                My experience and expertise: am proficient in multiple <br />
-                programming languages, have a strong understanding of <br />
-                software development methodologies, and possess excellent <br />
-                problem-solving skills.
+                My experience and expertise: am proficient in multiple programming languages, have a strong understanding of software development methodologies, and possess excellent problem-solving skills.
                 </CAccordionBody>
               </CAccordionItem>
             </CAccordion>
