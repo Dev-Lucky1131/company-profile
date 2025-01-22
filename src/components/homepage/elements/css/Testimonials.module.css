@@ -12,8 +12,7 @@
   display: flex;
   gap: 10px;
   font-weight: 500;
-  font-size: clamp(35px, 5.2vw, 45px);
-  line-height: clamp(40px, 5.2vw, 45px);
+  font-size: 50px;
   align-items: center;
   width: max-content;
   flex-wrap: wrap;
@@ -58,6 +57,18 @@
   flex-direction: column;
   align-items: center;
 }
+@media (max-width:800px) {
+  .MainTitle {
+    font-size: 40px;
+  }
+}
+@media (max-width:650px) {
+  .MainTitle {
+    font-size: 35px;
+  }
+}
+
+
 @media (max-width: 570px) {
   .MainTitle {
     flex-direction: column-reverse;
@@ -72,5 +83,15 @@
     align-items: center;
     justify-content: center;
     margin-right: 40px;
+  }
+}
+@media (max-width:450px) {
+  .MainTitle {
+    font-size: 30px;
+  }
+}
+@media (max-width:450px) {
+  .MainTitle {
+    display: none;
   }
 }

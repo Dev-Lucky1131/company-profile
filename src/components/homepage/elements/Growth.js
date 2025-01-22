@@ -16,7 +16,7 @@ function Growth({ width }) {
   return (
     <div
       className={global.Container}
-      style={{ marginTop: "100px", marginBottom:'50px'}}
+      style={{ marginTop: "100px", marginBottom: '100px' }}
     >
       <div className={global.Side}></div>
       <div
@@ -30,7 +30,7 @@ function Growth({ width }) {
       >
         <div className={styles.Container}>
           <div className={styles.left}>
-            <div className={global.TinyTitle}>
+            <div className={styles.TinyTitle}>
               <span className={styles.heading}>- GROWTH</span>
             </div>
             <div className={styles.header}  >
@@ -70,16 +70,28 @@ function Growth({ width }) {
           </div>
           <div className={styles.right}>
             <div className={styles.growthimgprt}>
-            <Image src={Statics} className={styles.statics}></Image>
-            <Image src={Launch} className={styles.launch}></Image>
+              <div className={styles.imgprt}>
+                <Image src={Statics} className={styles.statics}></Image>
+              </div>
+              <div className={styles.imgprt}>
+                <Image src={Launch} className={styles.launch}></Image>
+              </div>
             </div>
             <div className={styles.growthimgprt}>
-            <Image src={Instagram} className={styles.instagram}></Image>
-            <Image src={Subscribe} className={styles.subscribe}></Image>
+              <div className={styles.imgprt}>
+                <Image src={Instagram} className={styles.instagram}></Image>
+              </div>
+              <div className={styles.imgprt}>
+                <Image src={Subscribe} className={styles.subscribe}></Image>
+              </div>
             </div>
-            <div className={styles.growthimgprt}>
-            <Image src={Clients} className={styles.client}></Image>
-            <Image src={Revenue} className={styles.revenue}></Image>
+            <div className={styles.t_growthimgprt} >
+              <div className={styles.imgprt}>
+                <Image src={Clients} className={styles.client}></Image>
+              </div>
+              <div className={styles.imgprt}>
+                <Image src={Revenue} className={styles.revenue}></Image>
+              </div>
             </div>
           </div>
         </div>

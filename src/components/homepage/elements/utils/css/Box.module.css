@@ -71,6 +71,11 @@
   }
 }
 
+@media (max-width: 800px) {
+.Name {
+  font-size: 20px;
+}
+}
 @media (max-width: 700px) {
   .Container {
     width: 90%;

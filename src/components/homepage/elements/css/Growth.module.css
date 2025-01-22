@@ -4,7 +4,12 @@
   z-index: 10;
 
 }
-
+.TinyTitle {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
 .analysis_number {
   display: flex;
   gap: 50px;
@@ -29,8 +34,29 @@
 
 .growthimgprt {
   display: flex;
+  justify-content: space-between;
+}
+.t_growthimgprt {
+  display: flex;
   justify-content: flex-end;
+}
+.imgprt {
+  display: flex;
+  justify-content: center;
   align-items: flex-end;
+}
+.statics {
+  height: 300px;
+}
+.launch {
+  height: 340px;
+}
+.instagram {
+  width: 350px;
+  height: 230px;
+}
+.subscribe {
+  height: 180px;
 }
 
 .heading {
@@ -39,9 +65,10 @@
 }
 
 .header {
-  font-weight: 700;
-  font-size: clamp(50px, 127.2vw, 70px);
-  line-height: clamp(70px, 5.2vw, 45px);
+  font-weight: 500;
+  /* font-size: clamp(50px, 127.2vw, 70px); */
+  font-size: 50px;
+  /* line-height: clamp(70px, 5.2vw, 45px); */
   color: #000000;
   z-index: 30;
   margin-bottom: 50px;
@@ -56,7 +83,7 @@
 .s_Context {
   color: #7488a6;
   font-size: 20px;
-  margin-top: 50px;
+  margin-top: 30px;
   line-height: clamp(30px, 5.2vw, 35px);
 }
 
@@ -65,7 +92,7 @@
   -webkit-background-clip: text;
   font-size: 30px;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 500;
   color: #000000;
 }
 
@@ -119,13 +146,14 @@
 
 .Container {
   display: flex;
+  justify-content: space-between;
   width: 100%;
 }
 
 .left {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 47.5%;
 
 }
 
@@ -133,10 +161,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 50%;
+  width: 47.5%;
 }
 
-@media (max-width: 1500px) {
+/* @media (max-width: 1500px) {
   .statics {
     width: 230px;
   }
@@ -161,39 +189,27 @@
     width: 300px;
   }
 
-}
-
-@media (max-width: 1400px) {
-  .header {
-    font-size: clamp(50px, 127.2vw, 50px);
-    line-height: clamp(50px, 5.2vw, 45px);
-  }
-}
+} */
 
 @media (max-width: 1300px) {
-  .statics {
-    width: 200px;
+  .Container {
+    gap: 50px;
   }
-
   .launch {
-    width: 300px;
+    height: 320px;
   }
-
+  .statics {
+    height: 280px;
+  }
   .instagram {
-    width: 200px;
+    width: 330px;
+    height: 200px;
   }
-
   .subscribe {
-    width: 200px;
+    height: 170px;
   }
 
-  .client {
-    width: 160px;
-  }
 
-  .revenue {
-    width: 250px;
-  }
 }
 
 @media (max-width: 1100px) {
@@ -207,34 +223,14 @@
     width: 100%;
   }
 
-  .growthimgprt {
+  .growthimgprt ,.t_growthimgprt{
     display: flex;
     justify-content: space-around;
   }
-
-  .statics {
-    width: 260px;
+  .TinyTitle {
+    margin-top: 0px;
   }
 
-  .launch {
-    width: 400px;
-  }
-
-  .instagram {
-    width: 300px;
-  }
-
-  .subscribe {
-    width: 300px;
-  }
-
-  .client {
-    width: 250px;
-  }
-
-  .revenue {
-    width: 350px;
-  }
 }
 
 @media (max-width: 1000px) {
@@ -245,67 +241,26 @@
 
 @media (max-width: 800px) {
   .header {
-    font-size: clamp(40px, 127.2vw, 40px);
-    line-height: clamp(40px, 5.2vw, 40px);
+    font-size: 40px;
   }
   .SilvedHighlight {
     font-size: 35px;
   }
-  .statics {
-    width: 250px;
-  }
 
-  .launch {
-    width: 350px;
-  }
-
-  .instagram {
-    width: 250px;
-  }
-
-  .subscribe {
-    width: 250px;
-  }
-
-  .client {
-    width: 200px;
-  }
-
-  .revenue {
-    width: 300px;
-  }
   .f_Context,.s_Context,.HelpedWord {
     font-size: 17px;
   }
   .SilvedHighlight {
     font-size: 30px;
   }
+  .growthimgprt ,.t_growthimgprt{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 700px) {
-  .statics {
-    width: 200px;
-  }
 
-  .launch {
-    width: 300px;
-  }
-
-  .instagram {
-    width: 200px;
-  }
-
-  .subscribe {
-    width: 200px;
-  }
-
-  .client {
-    width: 160px;
-  }
-
-  .revenue {
-    width: 250px;
-  }
 
   .SilvedHighlight {
     font-size: 30px;
@@ -313,38 +268,15 @@
 }
 
 @media (max-width: 650px) {
-  .growthimgprt {
+  .growthimgprt ,.growthimgprt {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .statics {
-    width: 250px;
-  }
 
-  .launch {
-    width: 350px;
-  }
-
-  .instagram {
-    width: 250px;
-  }
-
-  .subscribe {
-    width: 250px;
-  }
-
-  .client {
-    width: 200px;
-  }
-
-  .revenue {
-    width: 300px;
-  }
   .header {
-    font-size: clamp(35px, 127.2vw, 35px);
-    line-height: clamp(35px, 5.2vw, 35px);
+    font-size: 35px;
   }
 }
 @media (max-width: 600px) {
@@ -358,9 +290,15 @@
   }
     
 }
+@media (max-width: 400px) {
+  .header {
+    font-size: 30px;
+  }
+}
 @media (max-width: 350px) {
   .right{
     margin-top: 40px;
   }
     
 }
+
