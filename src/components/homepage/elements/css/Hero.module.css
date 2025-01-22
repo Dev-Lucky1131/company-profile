@@ -9,6 +9,8 @@
   width: clamp(1px, 100vw, 1920px);
   height: max-content;
   justify-content: space-between;
+  position: relative;
+  padding-bottom: 300px;
 }
 
 .bgshadow {
@@ -17,7 +19,7 @@
   align-items: center;
   position: absolute;
   width: 100%;
-  height: 90%;
+  height: 100%;
 }
 
 .brightimg {
@@ -46,6 +48,7 @@
   margin-left: -4px;
   z-index: 30;
 }
+
 .SectionTitle {
   font-weight: 500;
   font-size: clamp(50px, 127.2vw, 70px);
@@ -109,15 +112,42 @@
 
 .SchemasContainer,
 .LogosContainer {
-  width: clamp(1px, 130%, 1550px);
+  /* width: clamp(1px, 130%, 1550px); */
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
   height: max-content;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
-  margin-top: 75px;
+  margin-top: 50px;
   margin-bottom: 50px;
   pointer-events: none;
+  z-index: 100;
+}
+
+.l_rectangular {
+  position: absolute;
+  width: 600px;
+  height: 220px;
+  left: 0;
+  bottom: 0;
+  z-index: 200;
+}
+
+.r_rectangular {
+  position: absolute;
+  width: 600px;
+  height: 220px;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+}
+
+.rectangular {
+  width: 100%;
+  height: 100%;
 }
 
 .LogosContainer {
@@ -165,13 +195,50 @@
   margin-top: -10px;
   /* height: calc(100% - 120px); */
 }
+
+@media (max-width: 1400px) {
+  .Container {
+    padding-bottom: 280px;
+  }
+}
+
 @media (max-width: 1300px) {
+  .Container {
+    padding-bottom: 250px;
+  }
+
+  .SchemasContainer {
+    bottom: 70px;
+  }
+
   .SectionTitle {
     font-size: clamp(40px, 127.2vw, 50px);
     line-height: clamp(55px, 5.2vw, 40px);
   }
+
   .HeroButton {
     font-weight: 300;
+  }
+
+  .r_rectangular,
+  .l_rectangular {
+    width: 400px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .Container {
+    padding-bottom: 200px;
+  }
+
+  .SchemasContainer {
+    bottom: 50px;
+  }
+  .r_rectangular,
+  .l_rectangular {
+    width: 350px;
+    height: 150px;
   }
 }
 
@@ -179,9 +246,33 @@
   .HeroButton {
     padding: 15px 30px;
   }
+
   .SectionTitle {
     font-size: clamp(30px, 127.2vw, 40px);
     line-height: clamp(65px, 5.2vw, 45px);
+  }
+
+  .Container {
+    padding-bottom: 180px;
+  }
+
+  .SchemasContainer {
+    bottom: 30px;
+  }
+  .r_rectangular,
+  .l_rectangular {
+    width: 250px;
+    height: 120px;
+  }
+}
+
+@media (max-width:600px) {
+  .Container {
+    padding-bottom: 150px;
+  }
+
+  .SchemasContainer {
+    bottom: 20px;
   }
 }
 
@@ -191,20 +282,33 @@
     font-size: clamp(30px, 127.2vw, 20px);
     line-height: clamp(45px, 5.2vw, 40px);
   }
+
   .HeroButtonText {
     font-weight: 300;
     font-size: 15px;
   }
-.iconbg,.gapbox {
-  display: none;
+
+  .iconbg,
+  .gapbox {
+    display: none;
+  }
+
+  .Container {
+    padding-bottom: 100px;
+  }
+
+  .SchemasContainer,.r_rectangular,.l_rectangular {
+    display: none;
+  }
 }
-}
+
 @media (max-width: 400px) {
 
   .SectionTitle {
     font-size: clamp(30px, 127.2vw, 30px);
     line-height: clamp(45px, 5.2vw, 40px);
   }
+
   .HeroButtonText {
     font-size: 13px;
   }
