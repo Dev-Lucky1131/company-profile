@@ -57,7 +57,7 @@ function Testimonials({ width }) {
         <div className={styles.Text}>
           <div className={styles.heading}>-&nbsp;Review</div>
           <div className={styles.MainTitle}>
-            <div>{width > 570 ? "Thousands of rave reviews" : ""}</div>
+            <div>Thousands of rave reviews</div>
             <div className={global.HighLightSemiPurple}>
               {" "}
             </div>

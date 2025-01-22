@@ -194,11 +194,17 @@
     font-size: 25px;
   }
 }
-
-@media (max-width: 700px) {
+@media (max-width:800px) {
   .header {
     font-size: 40px;
   }
+  .Side {
+    width: 50px;
+  }
+
+}
+@media (max-width: 700px) {
+
 
   .description {
     font-size: 15px;
@@ -213,7 +219,14 @@
   }
 
 }
-
+@media (max-width:650px) {
+  .header {
+    font-size: 35px;
+  }
+  .Side {
+    width: 45px;
+  }
+}
 @media (max-width: 620px) {
   .PicturesContainer {
     margin-right: 0px;
@@ -236,6 +249,9 @@
   .UserFlowContainer {
     margin-bottom: 40px;
   }
+  .Side {
+    width: 40px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -247,6 +263,9 @@
   .studies,
   .article {
     font-size: 15px;
+  }
+  .Side {
+    width: 35px;
   }
 }
 
@@ -272,12 +291,13 @@
     width: clamp(40px, 12vw, 55px);
     height: clamp(40px, 12vw, 55px);
   }
+  .Side {
+    width: 30px;
+  }
 }
 
 @media (max-width: 500px) {
-  .header {
-    font-size: 30px;
-  }
+
 
   .experiencebtn {
     display: flex;
@@ -287,15 +307,16 @@
   .featureimg {
     height: 300px;
   }
-.Side {
-  width: 59px;
-}
+
   .studies,
   .article {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 150px;
+  }
+  .Side {
+    width: 20px;
   }
 }
 
@@ -310,6 +331,6 @@
 }
 @media (max-width: 450px) {
   .header {
-    font-size: 25px;
+    font-size: 30px;
   }
 }

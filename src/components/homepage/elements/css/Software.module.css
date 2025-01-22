@@ -4,36 +4,41 @@
   width: clamp(1px, 100vw, 1920px);
   height: max-content;
 }
+
 .heading {
   color: #7c5cfc;
   font-size: 20px;
   margin-top: 100px;
   margin-bottom: 20px;
-  
+
 }
+
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 500;
   width: 100%;
   color: #ffffff;
 }
 
 .Main {
- display: flex;
- width: 100%;
- margin-top: 100px;
- margin-bottom: 100px;
+  display: flex;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
-.left, .right {
+
+.left,
+.right {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
 }
+
 .stackimage {
   display: flex;
   justify-content: center;
@@ -41,45 +46,95 @@
   width: 100%;
   height: max-content;
 }
+
 .img {
   width: 100%;
   height: 100%;
 }
 
 .accordion {
-  width: 80%!important;
+  width: 80% !important;
 }
+
 .accordionitem {
-  width: 100%!important;
+  width: 100% !important;
 }
 
 @media (max-width:1000px) {
-  .Main{
+  .Main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
   }
-  .left,.right {
+
+  .left,
+  .right {
     width: 100%;
   }
+
+  .stackimage {
+    width: 500px;
+  }
+
+  .accordion {
+    width: 450px !important;
+  }
 }
-@media (max-width:600px)  {
-.header {
-  font-size: 40px;
+
+@media (max-width:800px) {
+  .header {
+    font-size: 40px;
+  }
+
+  .stackimage {
+    width: 450px;
+  }
+
+  .accordion {
+    width: 400px !important;
+  }
 }
-}
-@media (max-width:500px)  {
+
+@media (max-width:650px) {
   .header {
     font-size: 35px;
   }
+
+  .stackimage {
+    width: 400px;
   }
 
-  @media (max-width:400px)  {
-.stackimage {
-  width: 360px;
-}
-.accordion {
-  width: 330px;
-}
+  .accordion {
+    width: 350px !important;
   }
+}
+
+@media (max-width:500px) {
+  .stackimage {
+    width: 350px;
+  }
+
+  .accordion {
+    width: 300px !important;
+  }
+}
+
+@media (max-width:450px) {
+  .stackimage {
+    width: 300px;
+  }
+
+  .accordion {
+    width: 250px !important;
+  }
+}
+
+@media (max-width:400px) {
+
+  .header {
+    font-size: 30px;
+  }
+
+}

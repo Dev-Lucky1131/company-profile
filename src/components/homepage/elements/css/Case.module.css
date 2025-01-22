@@ -21,6 +21,7 @@
   font-weight: 600;
   width: 100%;
   margin-top: 30px;
+  line-height: 60px;
   color: #000000;
 }
 .detaileddescription {
@@ -139,9 +140,7 @@
     flex-direction: column;
     font-size: 15px!important;
   }
-  .description {
-    font-size: 40px;
-  }
+
   .clickableTab {
     font-size: 15px!important;
   }
@@ -151,9 +150,9 @@
   .f_work,.s_work {
     padding: 15px 0px 0px 15px;
   }
-.description {
-  font-size: 30px;
-}
+  .description {
+    font-size: 40px;
+  }
 .detaileddescription {
   font-size: 20px;
 }
@@ -166,6 +165,11 @@
 .work_description {
   font-size: 15px;
 }
+}
+@media (max-width:650px) {
+  .description {
+    font-size: 35px;
+  }
 }
 @media (max-width:600px) {
   .work_heading {
@@ -197,4 +201,9 @@
 .detaileddescription {
   font-size: 15px;
 }
+}
+@media (max-width:450px) {
+  .description {
+    font-size: 35px;
+  }
 }

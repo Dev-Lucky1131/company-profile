@@ -79,10 +79,12 @@
   .heading {
     display: flex;
     flex-wrap: wrap;
-    font-size: 40px;
   }
 }
 @media (max-width:800px) {
+  .heading {
+    font-size: 40px;
+  }
   .Main {
     padding:100px 50px 50px 50px;
   }
@@ -97,10 +99,20 @@
   .Main {
     padding: 110px 30px 30px 30px;
   }
-  .heading {
-    font-size: 30px;
-  }
+
   .description {
     font-size: 15px;
+  }
+}
+
+@media (max-width:650px) {
+  .heading {
+    font-size: 35px;
+  }
+}
+
+@media (max-width:450px) {
+  .heading {
+    font-size: 30px;
   }
 }

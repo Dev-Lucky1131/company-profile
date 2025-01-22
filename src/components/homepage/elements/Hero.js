@@ -37,7 +37,7 @@ function Hero({ width }) {
     },
     {
       image: Pay,
-    }, 
+    },
     {
       image: Amazon,
     },
@@ -46,31 +46,31 @@ function Hero({ width }) {
   const isInView = useInView(ref, { once: true });
   return (
     <div className={styles.Container}>
-           <div className={styles.bgshadow}>
-          <div className={styles.brightimg}
-            style={{
-              position: 'relative',
-            }}>
-            <Image src={Vector} className={styles.heroimg}></Image>
-            <div style={{
-              position: 'absolute',
-              display: 'flex',
-              justifyContent: 'center',
-              alignContent: 'center',
-              width: '100%'
-            }}>
-              <Image src={Pattern}></Image>
-            </div>
-
+      <div className={styles.bgshadow}>
+        <div className={styles.brightimg}
+          style={{
+            position: 'relative',
+          }}>
+          <Image src={Vector} className={styles.heroimg}></Image>
+          <div style={{
+            position: 'absolute',
+            display: 'flex',
+            justifyContent: 'center',
+            alignContent: 'center',
+            width: '100%'
+          }}>
+            <Image src={Pattern}></Image>
           </div>
+
         </div>
+      </div>
       <div className={global.Side}></div>
       <div className={global.Main}
         style={{
           backgroundColor: '#060515',
           position: 'relative'
         }}>
-   
+
         <Navbar />
         <div
           ref={ref}
@@ -100,7 +100,7 @@ function Hero({ width }) {
             transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
         >
-          <div className={global.Context}>
+          <div className={styles.Context}>
             Our comprehensive tools offers small business owners a one-stop-shop solution to manage their accounting,<br />
             sales, marketing, outreach efforts, CRM, financial models, email campaigns, QuickBooks integration, record-<br />
             keeping, and a range of other crucial business functions.
@@ -118,53 +118,49 @@ function Hero({ width }) {
             transition: "all 0.6s cubic-bezier(0.17, 0.55, 0.55, 1) 0.6s",
           }}
         >
-          <div className={styles.HeroButton}>
-            <div className={styles.HeroButtonText}>Schedule A Meeting</div>
-          </div>
-          <div className={styles.gapbox}>
-            <div className={styles.gap}></div>
-          </div>
-          <div className={styles.iconbg}>
-            <svg
-              style={{ width: '20px', height: '20px', transform: 'rotate(215deg)' }}
-              className="fill-white"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 10 14"
-            >
-              <path
-                stroke="white"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 1v12m0 0 4-4m-4 4L1 9"
-              />
-            </svg>
-          </div>
-
-        </div>
-
-
-
-        {/* <div className={styles.LogosContainer}>
-
-        </div> */}
-      </div>
-      
-        <div className={styles.SchemasContainer}>
-          {logos.map((logos, i) => (
-            <div key={i}>
-              <Image src={logos.image} height={50} alt={"image"} />
+          <div className={styles.schedulebox}>
+            <div className={styles.HeroButton}>
+              <div className={styles.HeroButtonText}>Schedule A Meeting</div>
             </div>
-          ))}
-        
+            <div className={styles.gapbox}>
+              <div className={styles.gap}></div>
+            </div>
+            <div className={styles.iconbg}>
+              <svg
+                style={{ width: '20px', height: '20px', transform: 'rotate(215deg)' }}
+                className="fill-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 10 14"
+              >
+                <path
+                  stroke="white"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M5 1v12m0 0 4-4m-4 4L1 9"
+                />
+              </svg>
+            </div>
+          </div>
+
         </div>
-        <div className={styles.l_rectangular}>
-          <Image src={Lrectangular} className={styles.rectangular}></Image>
+      </div>
+
+      <div className={styles.SchemasContainer}>
+        {logos.map((logos, i) => (
+          <div key={i}>
+            <Image src={logos.image} height={40} alt={"image"} />
           </div>
-          <div className={styles.r_rectangular}>
-            <Image src={Rrectangular} className={styles.rectangular}></Image>
-          </div>
+        ))}
+
+      </div>
+      <div className={styles.l_rectangular}>
+        <Image src={Lrectangular} className={styles.rectangular}></Image>
+      </div>
+      <div className={styles.r_rectangular}>
+        <Image src={Rrectangular} className={styles.rectangular}></Image>
+      </div>
       <div className={global.Side}></div>
     </div>
   );

@@ -244,4 +244,11 @@
   .Logo {
     margin-top: 8px;
   }
+  .Login {
+    padding: 10px 0px;
+    font-weight: 400;
+  }
+  .starbox {
+    font-size: 10px!important;
+  }
 }
