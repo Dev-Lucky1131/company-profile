@@ -2,12 +2,15 @@ import styles from "./css/Hero.module.css";
 import global from "./css/Global.module.css";
 import Navbar from "./utils/Navbar";
 import Image from "next/image";
-import Doctor from "./addons/hero/Doctor.png";
-import Glossy from "./addons/hero/Glossy.png";
-import Cloud from "./addons/hero/Cloud.png";
-import Hues from "./addons/hero/Hues.png";
-import Scale from "./addons/hero/Scale.png";
-import Invert from "./addons/hero/Invert.png";
+import Google from "./addons/hero/googleplus logo.png";
+import Microsoft from "./addons/hero/microsoft logo.png";
+import Metal from "./addons/hero/metallb-horizontal-white logo.png";
+import Linkedin from "./addons/hero/linkedin-plain-wordmark logo.png";
+import Instagram from "./addons/hero/Frame 2.png";
+import Pay from "./addons/hero/Frame 3.png";
+import Amazon from "./addons/hero/Vector (2).png";
+import Lrectangular from './addons/hero/Rectangle 1413.png';
+import Rrectangular from './addons/hero/Rectangle 1414.png';
 import Pattern from "./addons/hero/pattern.png";
 import Vector from "./addons/hero/Vector.png";
 import { useRef } from "react";
@@ -18,35 +21,32 @@ function Hero({ width }) {
 
   const logos = [
     {
-      image: Doctor,
+      image: Google,
     },
     {
-      image: Glossy,
+      image: Microsoft,
     },
     {
-      image: Cloud,
+      image: Metal,
     },
     {
-      image: Hues,
+      image: Linkedin,
     },
     {
-      image: Scale,
+      image: Instagram,
     },
     {
-      image: Invert,
+      image: Pay,
+    }, 
+    {
+      image: Amazon,
     },
   ];
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
     <div className={styles.Container}>
-      <div className={global.Side}></div>
-      <div className={global.Main}
-        style={{
-          backgroundColor: '#060515',
-          position: 'relative'
-        }}>
-        <div className={styles.bgshadow}>
+           <div className={styles.bgshadow}>
           <div className={styles.brightimg}
             style={{
               position: 'relative',
@@ -64,6 +64,13 @@ function Hero({ width }) {
 
           </div>
         </div>
+      <div className={global.Side}></div>
+      <div className={global.Main}
+        style={{
+          backgroundColor: '#060515',
+          position: 'relative'
+        }}>
+   
         <Navbar />
         <div
           ref={ref}
@@ -139,17 +146,25 @@ function Hero({ width }) {
 
 
 
-        <div className={styles.SchemasContainer}>
-          {logos.map((logos, i) => (
-            <div key={i}>
-              <Image src={logos.image} height={75} alt={"image"} />
-            </div>
-          ))}
-        </div>
         {/* <div className={styles.LogosContainer}>
 
         </div> */}
       </div>
+      
+        <div className={styles.SchemasContainer}>
+          {logos.map((logos, i) => (
+            <div key={i}>
+              <Image src={logos.image} height={50} alt={"image"} />
+            </div>
+          ))}
+        
+        </div>
+        <div className={styles.l_rectangular}>
+          <Image src={Lrectangular} className={styles.rectangular}></Image>
+          </div>
+          <div className={styles.r_rectangular}>
+            <Image src={Rrectangular} className={styles.rectangular}></Image>
+          </div>
       <div className={global.Side}></div>
     </div>
   );
