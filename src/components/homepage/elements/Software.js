@@ -41,11 +41,11 @@ function Software({ width }) {
           <div className={styles.right}>
             <CAccordion activeItemKey={2} className={styles.accordion}>
               <CAccordionItem itemKey={1} style={{marginTop:'20px'}} className={styles.accordionitem}>
-                <CAccordionHeader>Experience</CAccordionHeader>
+                <CAccordionHeader >Experience</CAccordionHeader>
                 <CAccordionBody>
-                My experience and expertise: am proficient in multiple <br />
-                programming languages, have a strong understanding of <br />
-                software development methodologies, and possess <br />
+                My experience and expertise: am proficient in multiple 
+                programming languages, have a strong understanding of 
+                software development methodologies, and possess 
                 excellent problem-solving skills.
                 </CAccordionBody>
               </CAccordionItem>
