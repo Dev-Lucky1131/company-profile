@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 100%;
 }
+
 .heading {
   display: flex;
   justify-content: center;
@@ -12,6 +13,7 @@
   color: #7c5cfc;
   font-size: 20px;
 }
+
 .description {
   display: flex;
   justify-content: center;
@@ -24,6 +26,7 @@
   line-height: 60px;
   color: #000000;
 }
+
 .detaileddescription {
   display: flex;
   justify-content: center;
@@ -34,6 +37,7 @@
   margin-top: 30px;
   color: #7488a6;
 }
+
 .pagetab {
   display: flex;
   width: 100%;
@@ -43,15 +47,18 @@
   margin-top: 30px;
   margin-bottom: 100px;
 }
+
 .inline-flex {
-  border: 1px solid black!important;
+  border: 1px solid black !important;
 }
+
 .experience {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-top: 30px;
 }
+
 .f_work {
   display: flex;
   flex-direction: column;
@@ -60,6 +67,7 @@
   border-radius: 10px;
   width: 60%;
 }
+
 .s_work {
   display: flex;
   flex-direction: column;
@@ -68,16 +76,19 @@
   border-radius: 10px;
   width: 39%;
 }
+
 .work_heading {
   font-size: 30px;
   font-weight: 500;
 }
+
 .work_description {
   color: #7488a6;
   font-size: 20px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
+
 .f_work_img {
   display: flex;
   justify-content: center;
@@ -85,6 +96,7 @@
   width: 100%;
   height: max-content;
 }
+
 .s_work_img {
   display: flex;
   justify-content: center;
@@ -92,10 +104,12 @@
   width: 100%;
   height: max-content;
 }
+
 .consistentimg {
   width: 100%;
   height: 100%;
 }
+
 .tabbtn_prt {
   display: flex;
   justify-content: center;
@@ -103,14 +117,52 @@
   width: 100%;
   /* position: relative; */
 }
+
+/* Case.module.css */
+
 .tabbtn {
   display: flex;
+  gap: 10px; /* Spacing between tabs */
+  flex-wrap: wrap; /* Allow tabs to wrap if necessary */
   padding: 20px 30px;
-  border: 1px solid #DEDEDE;
   border-radius: 50px;
-  gap: 20px;
+  border: 1px solid #e0e0e0;
 }
-.f_part,.s_part {
+
+.tabButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #596780;
+  padding: 10px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+  border: none; /* Remove default button border */
+}
+
+.tabButton:hover {
+  background-color: #e0e0e0; /* Hover effect */
+}
+
+.activeTab {
+  background-color: #7c5cfc;
+  color: #ffffff;
+}
+
+.tabContent {
+  display: none;
+}
+
+.tabContentActive {
+  display: block;
+}
+
+
+.f_part,
+.s_part {
   display: flex;
   gap: 20px;
 }
@@ -129,7 +181,8 @@
   width: 100%;
   height: max-content;
 }
-.tabcontent{
+
+.tabcontent {
   display: flex;
   flex-direction: column;
 }
@@ -138,76 +191,107 @@
   .tabbtn {
     display: flex;
     flex-direction: column;
-    font-size: 15px!important;
+    font-size: 15px !important;
   }
 
   .clickableTab {
-    font-size: 15px!important;
+    font-size: 15px !important;
   }
 }
 
 @media (max-width:800px) {
-  .f_work,.s_work {
+
+  .f_work,
+  .s_work {
     padding: 15px 0px 0px 15px;
   }
+
   .description {
     font-size: 40px;
   }
-.detaileddescription {
-  font-size: 18px;
+
+  .detaileddescription {
+    font-size: 18px;
+  }
+
+  .button {
+    font-size: 20px !important;
+  }
+
+  .work_heading {
+    font-size: 20px;
+  }
+
+  .work_description {
+    font-size: 15px;
+  }
+  .tabButton {
+    font-size: 18px!important;
+  }
+
 }
-.button {
-  font-size: 20px !important;
-}
-.work_heading {
-  font-size: 20px;
-}
-.work_description {
-  font-size: 15px;
-}
-}
+
 @media (max-width:650px) {
   .description {
     font-size: 35px;
   }
+
   .detaileddescription {
     font-size: 16px;
   }
+  .tabButton {
+    font-size: 16px!important;
+  }
 }
+
 @media (max-width:600px) {
   .work_heading {
     font-size: 15px;
   }
+
   .work_description {
     font-size: 10px;
   }
 }
-@media (max-width:500px)  {
-.consistentimg {
-  width: 230px;
-}
-.AIimg {
-  width: 130px;
-}
-.f_work,.s_work {
-  width: max-content;
-}
-.tabcontent {
-  padding: 0px 10px;
-}
-.experience {
-  gap: 10px;
-}
-.description,.detaileddescription {
-  padding: 0px 10px;
-}
+
+@media (max-width:500px) {
+  .consistentimg {
+    width: 230px;
+  }
+
+  .AIimg {
+    width: 130px;
+  }
+
+  .f_work,
+  .s_work {
+    width: max-content;
+  }
+
+  .tabcontent {
+    padding: 0px 10px;
+  }
+
+  .experience {
+    gap: 10px;
+  }
+
+  .description,
+  .detaileddescription {
+    padding: 0px 10px;
+  }
 
 }
-@media (max-width:450px) {
+
+@media (max-width:400px) {
   .description {
     font-size: 28px;
   }
+
   .detaileddescription {
     font-size: 15px;
+  }
+  .tabButton {
+    font-size: 15px!important;
   }
 }
