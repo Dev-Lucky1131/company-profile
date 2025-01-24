@@ -52,7 +52,7 @@
 .SectionTitle {
   font-weight: 400;
   /* font-size: clamp(50px, 127.2vw, 70px); */
-  font-size: 70px;
+  font-size: 50px;
   text-align: center;
   line-height: clamp(85px, 5.2vw, 45px);
   color: #ffffff;
@@ -222,10 +222,10 @@
     bottom: 70px;
   }
 
-  .SectionTitle {
+  /* .SectionTitle {
     font-size: clamp(40px, 127.2vw, 50px);
     line-height: clamp(55px, 5.2vw, 40px);
-  }
+  } */
 
   .HeroButton {
     font-weight: 300;
@@ -253,15 +253,25 @@
   }
 }
 
+@media (max-width:800px) {
+  .Context {
+    font-size: 18px;
+  }
+  .SectionTitle {
+    font-size: 40px;
+    line-height: clamp(55px, 5.2vw, 45px);
+  }
+  .HeroButtonText {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 700px) {
   .HeroButton {
     padding: 15px 30px;
   }
 
-  .SectionTitle {
-    font-size: clamp(30px, 127.2vw, 40px);
-    line-height: clamp(65px, 5.2vw, 45px);
-  }
+
 
   .Container {
     padding-bottom: 180px;
@@ -274,6 +284,18 @@
   .l_rectangular {
     width: 250px;
     height: 120px;
+  }
+}
+@media (max-width:650px)  {
+  .Context {
+    font-size: 16px;
+  }
+  .HeroButtonText {
+    font-size: 16px;
+  }
+  .SectionTitle {
+    font-size: 35px;
+    line-height: clamp(50px, 5.2vw, 45px);
   }
 }
 
@@ -289,13 +311,10 @@
 
 @media (max-width: 500px) {
   .Context {
-    font-size:  17px;
+    font-size:  16px;
   }
 
-  .SectionTitle {
-    font-size: clamp(30px, 127.2vw, 20px);
-    line-height: clamp(45px, 5.2vw, 40px);
-  }
+
 
   .HeroButtonText {
     font-weight: 300;
@@ -319,12 +338,15 @@
 @media (max-width: 400px) {
 
   .SectionTitle {
-    font-size: clamp(30px, 127.2vw, 30px);
+    font-size: 28px;
     line-height: clamp(45px, 5.2vw, 40px);
   }
 
-  .HeroButtonText {
-    font-size: 13px;
+  .Context {
+    font-size: 15px;
   }
-
+  .HeroButtonText {
+    font-size: 15px;
+  }
+ 
 }

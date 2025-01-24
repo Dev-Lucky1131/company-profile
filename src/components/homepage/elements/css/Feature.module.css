@@ -141,11 +141,11 @@
   }
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .featureheader {
     font-size: 40px;
   }
-}
+} */
 
 @media (max-width: 1100px) {
   .LeftButtons {
@@ -176,9 +176,9 @@
     height: 500px;
   }
 
-  .featureheader {
+  /* .featureheader {
     font-size: 30px;
-  }
+  } */
 
   .featuredescription {
     font-size: 15px;
@@ -190,9 +190,9 @@
     height: 450px;
   }
 
-  .featureheader {
+  /* .featureheader {
     font-size: 25px;
-  }
+  } */
 }
 @media (max-width:800px) {
   .header {
@@ -201,27 +201,33 @@
   .Side {
     width: 50px;
   }
-
+  .description {
+    font-size: 18px;
+  }
+  .studies,
+  .article {
+    font-size: 18px;
+  }
+  .featureheader {
+    font-size: 40px;
+  }
 }
 @media (max-width: 700px) {
 
-
-  .description {
-    font-size: 15px;
-  }
-
   .featureimg {
     height: 400px;
-  }
-
-  .featureheader {
-    font-size: 20px;
   }
 
 }
 @media (max-width:650px) {
   .header {
     font-size: 35px;
+  }
+  .featureheader {
+    font-size: 35px;
+  }
+  .description {
+    font-size: 16px;
   }
   .Side {
     width: 45px;
@@ -262,7 +268,7 @@
 
   .studies,
   .article {
-    font-size: 15px;
+    font-size: 16px;
   }
   .Side {
     width: 35px;
@@ -322,15 +328,25 @@
 
 @media (max-width: 450px) {
 
-  .featureheader {
-    font-size: 15px;
-  }
+
   .featuredescription {
     font-size: 10px;
   }
 }
 @media (max-width: 450px) {
   .header {
-    font-size: 30px;
+    font-size: 28px;
+  }
+  .description {
+    font-size: 15px;
+  }
+  .studies,
+  .article {
+    font-size: 15px;
+  }
+}
+@media (max-width : 400px) {
+  .featureheader {
+    font-size: 28px;
   }
 }
